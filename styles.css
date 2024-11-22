@@ -1,5 +1,19 @@
-.logo
-{
+body {
+    margin: 10px;
+    background-color: black;
+}
+
+.logo {
     height: 200px;
     width: 300px;
+}
+
+.nav {
+    text-align: right;
+    color: wheat;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
 }
