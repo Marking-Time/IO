@@ -11,13 +11,53 @@
     <div class="w3-cell-row"><img class="logo" src="IO-Logo-color.svg" alt="IO Logo">
         <div class="w3-cell nav w3-cell-middle">
             <ul style="list-style-type:none;">
-                <li>Home</li>
-                <li>Products/Services</li>
-                <li>About</li>
+                <li> 
+                    <button onclick="home_function()" class="w3-button w3-round-large w3-ripple">Home</button>
+                </li>
+                <li>
+                    <button onclick="ps_function()" class="w3-button w3-round-large w3-ripple">Products/Services</button>
+
+                </li>
+                <li>
+                    <button onclick="about_function()" class="w3-button w3-round-large w3-ripple">About</button>
+                </li>
             </ul>
         </div>
 
     </div>
+
+    <div id="homeDIV"><h3>Home</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni tempore neque consequatur placeat? Sed recusandae architecto, cupiditate, aliquid error nemo, perferendis omnis earum quibusdam sunt libero? Non eum nam voluptatum dolorem consequuntur odio nisi sit dicta quas. Facere nam praesentium minima officia excepturi dolores optio veniam nihil officiis quaerat?</p>
+    </div>
     
+    <div id="p/sDIV" style="display: none;"><h3>Products/Services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet repellendus sequi ipsum at sit! Quasi sit eius accusamus blanditiis expedita mollitia ex nam cum voluptatum.</p>
+
+    </div>
+    
+    <div id="aboutDIV" style="display: none;"> <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut possimus commodi soluta reprehenderit corrupti, quidem mollitia natus, quaerat magnam totam nemo. Eaque, esse labore!</p>
+
+    </div>
+    <script>
+        function home_function() {
+            document.getElementById("homeDIV").style.display = "block";
+            document.getElementById("p/sDIV").style.display = "none";
+            document.getElementById("aboutDIV").style.display = "none";
+        }
+        
+        function ps_function() {
+            document.getElementById("homeDIV").style.display = "none";
+            document.getElementById("p/sDIV").style.display = "block";
+            document.getElementById("aboutDIV").style.display = "none";
+        }
+        
+        function about_function() {
+            document.getElementById("homeDIV").style.display = "none";
+            document.getElementById("p/sDIV").style.display = "none";
+            document.getElementById("aboutDIV").style.display = "block";
+        }
+        
+        </script>
 </body>
 </html>
