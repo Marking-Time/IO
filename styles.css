@@ -16,9 +16,16 @@ body {
 }
 button:hover {
     background-color: #abc825;
-    color: black;
 }
-
+.w3-button:hover {
+    background-color: #abc825;
+}
+.w3-round-large:hover {
+    background-color: #abc825;
+}
+.w3-ripple:hover {
+    background-color: #abc825;
+}
 li {
     display: inline;
     padding: 20px;
