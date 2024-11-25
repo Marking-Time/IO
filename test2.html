@@ -14,7 +14,7 @@ button:hover {
 
 </head>
 <body>
-
+<!-- 
 <p>Click the "Try it" button to set the display property of the DIV element to "none":</p>
 
 <button onclick="home_function()">home</button>
@@ -54,7 +54,25 @@ function about_function() {
     document.getElementById("aboutDIV").style.display = "block";
 }
 
-</script>
+</script> -->
+
+<div class="w3-cell-row"><img class="logo" style="height:150px; width:200px;" src="IO-Logo-color.svg" alt="IO Logo">
+    <div class="w3-cell nav w3-cell-middle">
+        <ul style="list-style-type:none;">
+            <li> 
+                <button onclick="home_function()" class="w3-button w3-round-large w3-ripple">Home</button>
+            </li>
+            <li>
+                <button onclick="ps_function()" class="w3-button w3-round-large w3-ripple">Products/Services</button>
+
+            </li>
+            <li>
+                <button onclick="about_function()" class="w3-button w3-round-large w3-ripple">About</button>
+            </li>
+        </ul>
+    </div>
+
+</div>
 
 </body>
 </html>
